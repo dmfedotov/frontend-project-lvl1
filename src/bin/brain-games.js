@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { printGreeting, sayHelloToUser } from '..';
+import { printGreeting, sayHelloToUser, getUserName } from '..';
 
 printGreeting();
-sayHelloToUser();
+sayHelloToUser(getUserName());
