@@ -1,10 +1,5 @@
 #!/usr/bin/env node
-import {
-  printGreeting,
-  printRules,
-  startGame,
-} from '..';
+import { startGame } from '..';
+import { RULES, generateQuestion, calculateAnswer } from '../games/brain-even';
 
-printGreeting();
-printRules();
-startGame();
+startGame(RULES, generateQuestion, calculateAnswer);

@@ -1,39 +1,36 @@
 import readlineSync from 'readline-sync';
+import { cons, car, cdr } from '@hexlet/pairs';
 
-// brain-games logic
-const printGreeting = () => {
-  console.log('Welcome to the Brain Games!');
-};
+const ROUNDS = 3;
+
+const printGreeting = () => console.log('Welcome to the Brain Games!');
+const printRules = (rules) => console.log(rules);
 
 const getUserName = () => readlineSync.question('May I have your name? ');
-
 const sayHelloToUser = (name) => {
   console.log(`Hello, ${name}\n`);
 };
 
-// brain-even logic
-const printRules = () => {
-  console.log('Answer "yes" if the number is even, otherwise answer "no".\n');
-};
+const makeQuestion = (question, answer) => cons(question, answer);
+const getQuestion = (question) => car(question);
+const getAnswer = (question) => cdr(question);
 
-const getRandomNum = () => Math.floor(Math.random() * 101);
+const startGame = (rules, genQuestion, calcAnswer) => {
+  printGreeting();
+  printRules(rules);
 
-const isRightAnswer = (num) => (num % 2 === 0 ? 'yes' : 'no');
-
-const startGame = () => {
-  const AMOUNT_OF_QUESTIONS = 3;
   const userName = getUserName();
   sayHelloToUser(userName);
 
-  for (let i = 1; i <= AMOUNT_OF_QUESTIONS; i += 1) {
-    const number = getRandomNum();
-    const userAnswer = readlineSync.question(`Question: ${number} `);
-    const rightAnswer = isRightAnswer(number);
+  for (let i = 1; i <= ROUNDS; i += 1) {
+    const task = genQuestion();
+    const question = makeQuestion(task, calcAnswer(task));
+    const userAnswer = readlineSync.question(`Question: ${getQuestion(question)} `);
 
-    if (userAnswer === rightAnswer) {
+    if (userAnswer === getAnswer(question)) {
       console.log(`Your answer: ${userAnswer}\nCorrect!`);
     } else {
-      return console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${rightAnswer}.\nLet's try again, ${userName}!`);
+      return console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${getAnswer(question)}.\nLet's try again, ${userName}!`);
     }
   }
 
@@ -44,6 +41,5 @@ export {
   printGreeting,
   getUserName,
   sayHelloToUser,
-  printRules,
   startGame,
 };
