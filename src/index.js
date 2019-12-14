@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { cons, car, cdr } from '@hexlet/pairs';
+import { car, cdr } from '@hexlet/pairs';
 
 const ROUNDS = 3;
 
@@ -11,11 +11,10 @@ const sayHelloToUser = (name) => {
   console.log(`Hello, ${name}\n`);
 };
 
-const makeQuestion = (question, answer) => cons(question, answer);
 const getQuestion = (question) => car(question);
 const getAnswer = (question) => cdr(question);
 
-const startGame = (rules, genQuestion, calcAnswer) => {
+const startGame = (rules, genQuestion) => {
   printGreeting();
   printRules(rules);
 
@@ -23,8 +22,7 @@ const startGame = (rules, genQuestion, calcAnswer) => {
   sayHelloToUser(userName);
 
   for (let i = 1; i <= ROUNDS; i += 1) {
-    const task = genQuestion();
-    const question = makeQuestion(task, calcAnswer(task));
+    const question = genQuestion();
     const userAnswer = readlineSync.question(`Question: ${getQuestion(question)} `);
 
     if (userAnswer === getAnswer(question)) {
