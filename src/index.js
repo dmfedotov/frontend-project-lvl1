@@ -28,7 +28,7 @@ const startGame = (rules, genQuestion) => {
     if (userAnswer === getAnswer(question)) {
       console.log(`Your answer: ${userAnswer}\nCorrect!`);
     } else {
-      return console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${getAnswer(question)}.\nLet's try again, ${userName}!`);
+      return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${getAnswer(question)}'.\nLet's try again, ${userName}!`);
     }
   }
 
