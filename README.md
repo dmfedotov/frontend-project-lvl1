@@ -10,3 +10,7 @@ To install the package run **npm link** in your terminal
 Игра "Проверка на чётность"  
 run **brain-even**
 [![asciicast](https://asciinema.org/a/Hthkj94ACys8eVEnrN4StUf3f.svg)](https://asciinema.org/a/Hthkj94ACys8eVEnrN4StUf3f)
+
+Игра "Калькулятор"  
+run **brain-calc**
+[![asciicast](https://asciinema.org/a/NvLysOJQXwahCqOd2p4dceevd.svg)](https://asciinema.org/a/NvLysOJQXwahCqOd2p4dceevd)
