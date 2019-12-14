@@ -14,3 +14,7 @@ run **brain-even**
 Игра "Калькулятор"  
 run **brain-calc**
 [![asciicast](https://asciinema.org/a/NvLysOJQXwahCqOd2p4dceevd.svg)](https://asciinema.org/a/NvLysOJQXwahCqOd2p4dceevd)
+
+Игра "НОД"  
+run **brain-gcd**
+[![asciicast](https://asciinema.org/a/pNS84iKYcl8u2jEYb4opH79nF.svg)](https://asciinema.org/a/pNS84iKYcl8u2jEYb4opH79nF)
