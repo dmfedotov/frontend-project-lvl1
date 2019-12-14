@@ -23,10 +23,11 @@ const startGame = (rules, genQuestion) => {
 
   for (let i = 1; i <= ROUNDS; i += 1) {
     const question = genQuestion();
-    const userAnswer = readlineSync.question(`Question: ${getQuestion(question)} `);
+    console.log(`Question: ${getQuestion(question)}`);
+    const userAnswer = readlineSync.question('Your answer: ');
 
     if (userAnswer === getAnswer(question)) {
-      console.log(`Your answer: ${userAnswer}\nCorrect!`);
+      console.log('Correct!');
     } else {
       return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${getAnswer(question)}'.\nLet's try again, ${userName}!`);
     }
