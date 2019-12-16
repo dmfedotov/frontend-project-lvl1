@@ -1,7 +1,7 @@
 {
   "name": "frontend-project-lvl1",
   "version": "1.4.0",
-  "description": "",
+  "description": "It's an interesting way to pass your time :)",
   "main": "dist/index.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
@@ -11,6 +11,12 @@
     "brain-progression": "dist/bin/brain-progression.js",
     "brain-prime": "dist/bin/brain-prime.js"
   },
+  "keywords": [
+    "console",
+    "games",
+    "hexlet",
+    "cli"
+  ],
   "files": [
     "dist"
   ],
