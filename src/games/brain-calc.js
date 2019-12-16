@@ -1,7 +1,11 @@
 import { cons } from '@hexlet/pairs';
 import { getRandomNum } from './brain-even';
 
-const RULES = 'What is the result of the expression?\n';
+const rules = 'What is the result of the expression?\n';
+const minNumber = 1;
+const maxNumber = 20;
+const signIndexBegin = 1;
+const signIndexEnd = 3;
 
 const getRandomSign = (num) => {
   let sign;
@@ -41,13 +45,13 @@ const calculateAnswer = (num, num2, sign) => {
 };
 
 const generateQuestion = () => {
-  const number = getRandomNum(1, 20);
-  const number2 = getRandomNum(1, 20);
-  const sign = getRandomSign(getRandomNum(1, 3));
+  const number = getRandomNum(minNumber, maxNumber);
+  const number2 = getRandomNum(minNumber, maxNumber);
+  const sign = getRandomSign(getRandomNum(signIndexBegin, signIndexEnd));
   const question = `${number} ${sign} ${number2}`;
   const answer = calculateAnswer(number, number2, sign);
 
   return cons(question, answer);
 };
 
-export { RULES, generateQuestion };
+export { rules, generateQuestion };

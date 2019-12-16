@@ -1,27 +1,28 @@
 import { cons } from '@hexlet/pairs';
 import { getRandomNum } from './brain-even';
 
-const RULES = 'What number is missing in the progression?\n';
+const rules = 'What number is missing in the progression?\n';
+const progressionLength = 11;
+const minNumber = 1;
+const maxNumber = 10;
 
 const generateQuestion = () => {
-  const LENGTH = 11;
-
-  const missingPosition = getRandomNum(1, 10);
-  const step = getRandomNum(1, LENGTH);
-  const start = getRandomNum(1, LENGTH);
+  const missingPosition = getRandomNum(minNumber, maxNumber);
+  const progressionStep = getRandomNum(minNumber, maxNumber);
+  const initNumber = getRandomNum(minNumber, maxNumber);
 
   const progression = '';
   let answer;
 
   const makeProgression = (counter, acc) => {
-    if (counter === LENGTH) {
+    if (counter === progressionLength) {
       return acc.trim();
     }
     if (counter === missingPosition) {
-      answer = String(start + step * (counter - 1));
+      answer = String(initNumber + progressionStep * (counter - 1));
       return makeProgression(counter + 1, `${acc} ..`);
     }
-    return makeProgression(counter + 1, `${acc} ${start + step * (counter - 1)}`);
+    return makeProgression(counter + 1, `${acc} ${initNumber + progressionStep * (counter - 1)}`);
   };
 
   const question = makeProgression(1, progression);
@@ -29,4 +30,4 @@ const generateQuestion = () => {
   return cons(question, answer);
 };
 
-export { RULES, generateQuestion };
+export { rules, generateQuestion };
