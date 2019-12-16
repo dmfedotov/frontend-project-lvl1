@@ -22,3 +22,7 @@ run **brain-gcd**
 Игра "Арифметическая прогрессия"  
 run **brain-progression**
 [![asciicast](https://asciinema.org/a/VuHP1IJempmPIak6rwYZMRFjK.svg)](https://asciinema.org/a/VuHP1IJempmPIak6rwYZMRFjK)
+
+Игра "Простое ли число?"  
+run **brain-prime**
+[![asciicast](https://asciinema.org/a/7NvdmDrSOr5CIXSB2W1jcMooH.svg)](https://asciinema.org/a/7NvdmDrSOr5CIXSB2W1jcMooH)
