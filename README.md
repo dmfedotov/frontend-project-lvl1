@@ -18,3 +18,7 @@ run **brain-calc**
 Игра "НОД"  
 run **brain-gcd**
 [![asciicast](https://asciinema.org/a/pNS84iKYcl8u2jEYb4opH79nF.svg)](https://asciinema.org/a/pNS84iKYcl8u2jEYb4opH79nF)
+
+Игра "Арифметическая прогрессия"  
+run **brain-progression**
+[![asciicast](https://asciinema.org/a/VuHP1IJempmPIak6rwYZMRFjK.svg)](https://asciinema.org/a/VuHP1IJempmPIak6rwYZMRFjK)
