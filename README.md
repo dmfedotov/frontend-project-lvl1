@@ -4,25 +4,27 @@
 
 [![Build Status](https://travis-ci.org/dmfedotov/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/dmfedotov/frontend-project-lvl1)
 
-To install the package run **npm link** in your terminal
-[![asciicast](https://asciinema.org/a/rOxped7gtdiaTpFvqYOArYbF3.svg)](https://asciinema.org/a/rOxped7gtdiaTpFvqYOArYbF3)
+First, you need to install npm. After that run the following commands in your terminal.  
+`make publish`  
+`npm link`
+[![asciicast](https://asciinema.org/a/WH49JRylYFcRWiGlmPuvhgabp.svg)](https://asciinema.org/a/WH49JRylYFcRWiGlmPuvhgabp)
 
 Игра "Проверка на чётность"  
 run **brain-even**
-[![asciicast](https://asciinema.org/a/Hthkj94ACys8eVEnrN4StUf3f.svg)](https://asciinema.org/a/Hthkj94ACys8eVEnrN4StUf3f)
+[![asciicast](https://asciinema.org/a/qW1AChHq9BIuVRyv51wj13wiy.svg)](https://asciinema.org/a/qW1AChHq9BIuVRyv51wj13wiy)
 
 Игра "Калькулятор"  
 run **brain-calc**
-[![asciicast](https://asciinema.org/a/NvLysOJQXwahCqOd2p4dceevd.svg)](https://asciinema.org/a/NvLysOJQXwahCqOd2p4dceevd)
+[![asciicast](https://asciinema.org/a/c8HNZ77mvHxjXwVYv1hqtvLhR.svg)](https://asciinema.org/a/c8HNZ77mvHxjXwVYv1hqtvLhR)
 
 Игра "НОД"  
 run **brain-gcd**
-[![asciicast](https://asciinema.org/a/pNS84iKYcl8u2jEYb4opH79nF.svg)](https://asciinema.org/a/pNS84iKYcl8u2jEYb4opH79nF)
+[![asciicast](https://asciinema.org/a/wvXDoWuQxLP9CHbRBIvQO5sU9.svg)](https://asciinema.org/a/wvXDoWuQxLP9CHbRBIvQO5sU9)
 
 Игра "Арифметическая прогрессия"  
 run **brain-progression**
-[![asciicast](https://asciinema.org/a/VuHP1IJempmPIak6rwYZMRFjK.svg)](https://asciinema.org/a/VuHP1IJempmPIak6rwYZMRFjK)
+[![asciicast](https://asciinema.org/a/BblBY23Xrg6PmJJECbx3OzOu6.svg)](https://asciinema.org/a/BblBY23Xrg6PmJJECbx3OzOu6)
 
 Игра "Простое ли число?"  
 run **brain-prime**
-[![asciicast](https://asciinema.org/a/7NvdmDrSOr5CIXSB2W1jcMooH.svg)](https://asciinema.org/a/7NvdmDrSOr5CIXSB2W1jcMooH)
+[![asciicast](https://asciinema.org/a/8cHIidwwDAc6msBbspwyDJ2fz.svg)](https://asciinema.org/a/8cHIidwwDAc6msBbspwyDJ2fz)
