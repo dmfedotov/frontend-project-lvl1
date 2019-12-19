@@ -1,5 +1,5 @@
 import { cons } from '@hexlet/pairs';
-import { getRandomNum } from './brain-even';
+import getRandomNum from '../util';
 
 const rules = 'What is the result of the expression?\n';
 const minNumber = 1;

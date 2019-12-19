@@ -1,5 +1,5 @@
 import { cons } from '@hexlet/pairs';
-import { getRandomNum } from './brain-even';
+import getRandomNum from '../util';
 
 const rules = 'What number is missing in the progression?\n';
 const progressionLength = 11;

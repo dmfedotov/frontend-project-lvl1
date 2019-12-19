@@ -1,5 +1,5 @@
 import { cons } from '@hexlet/pairs';
-import { getRandomNum } from './brain-even';
+import getRandomNum from '../util';
 
 const rules = 'Find the greatest common divisor of given numbers.\n';
 const minNumber = 1;

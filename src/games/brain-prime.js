@@ -1,5 +1,5 @@
 import { cons } from '@hexlet/pairs';
-import { getRandomNum } from './brain-even';
+import getRandomNum from '../util';
 
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".\n';
 const minNumber = 1;
