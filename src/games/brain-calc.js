@@ -2,33 +2,15 @@ import { cons } from '@hexlet/pairs';
 import getRandomNum from '../util';
 
 const rules = 'What is the result of the expression?\n';
+const operations = ['+', '-', '*'];
 const minNumber = 1;
 const maxNumber = 20;
-const signIndexBegin = 1;
-const signIndexEnd = 3;
 
-const getRandomSign = (num) => {
-  let sign;
+const getRandomOperation = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
-  switch (num) {
-    case 1:
-      sign = '+';
-      break;
-    case 2:
-      sign = '-';
-      break;
-    case 3:
-      sign = '*';
-      break;
-    default: // Do nothing
-  }
-
-  return sign;
-};
-
-const calculateAnswer = (num, num2, sign) => {
+const calculateAnswer = (num, num2, operation) => {
   let answer;
-  switch (sign) {
+  switch (operation) {
     case '+':
       answer = String(num + num2);
       break;
@@ -47,9 +29,9 @@ const calculateAnswer = (num, num2, sign) => {
 const generateQuestion = () => {
   const number = getRandomNum(minNumber, maxNumber);
   const number2 = getRandomNum(minNumber, maxNumber);
-  const sign = getRandomSign(getRandomNum(signIndexBegin, signIndexEnd));
-  const question = `${number} ${sign} ${number2}`;
-  const answer = calculateAnswer(number, number2, sign);
+  const operation = getRandomOperation(operations);
+  const question = `${number} ${operation} ${number2}`;
+  const answer = calculateAnswer(number, number2, operation);
 
   return cons(question, answer);
 };
