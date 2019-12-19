@@ -5,12 +5,9 @@ const rules = 'Find the greatest common divisor of given numbers.\n';
 const minNumber = 1;
 const maxNumber = 100;
 
-const getMaxNum = (num, num2) => (num - num2 > 0 ? num : num2);
-const getMinNum = (num, num2) => (num - num2 > 0 ? num2 : num);
-
 const calculateAnswer = (num, num2) => {
-  const maxNum = getMaxNum(num, num2);
-  const minNum = getMinNum(num, num2);
+  const maxNum = Math.max(num, num2);
+  const minNum = Math.min(num, num2);
 
   const greatestCommonDivisor = (max, min) => {
     if (max % min === 0) {
