@@ -1,1 +1,1 @@
-export default (begin, end) => Math.round(Math.random() * (end - begin) + begin);
+export default (from, to) => Math.round(Math.random() * (to - from) + from);
