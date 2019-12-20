@@ -3,23 +3,15 @@ import { car, cdr } from '@hexlet/pairs';
 
 const ROUNDS = 3;
 
-const printGreeting = () => console.log('Welcome to the Brain Games!');
-const printRules = (rules) => console.log(rules);
-
-const getUserName = () => readlineSync.question('May I have your name? ');
-const sayHelloToUser = (name) => {
-  console.log(`Hello, ${name}\n`);
-};
-
 const getQuestion = (question) => car(question);
 const getAnswer = (question) => cdr(question);
 
-const startGame = (rules, genQuestion) => {
-  printGreeting();
-  printRules(rules);
+const buildGame = (rules, genQuestion) => {
+  console.log('Welcome to the Brain Games!');
+  console.log(rules);
 
-  const userName = getUserName();
-  sayHelloToUser(userName);
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}\n`);
 
   for (let i = 1; i <= ROUNDS; i += 1) {
     const question = genQuestion();
@@ -36,9 +28,4 @@ const startGame = (rules, genQuestion) => {
   return console.log(`Congratulations, ${userName}!`);
 };
 
-export {
-  printGreeting,
-  getUserName,
-  sayHelloToUser,
-  startGame,
-};
+export default buildGame;

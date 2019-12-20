@@ -1,4 +1,5 @@
 import { cons } from '@hexlet/pairs';
+import buildGame from '..';
 import getRandomNum from '../util';
 
 const rules = 'What number is missing in the progression?\n';
@@ -30,4 +31,6 @@ const generateQuestion = () => {
   return cons(question, answer);
 };
 
-export { rules, generateQuestion };
+const startGame = () => buildGame(rules, generateQuestion);
+
+export default startGame;
