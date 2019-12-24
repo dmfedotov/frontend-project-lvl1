@@ -6,9 +6,9 @@ const ROUNDS = 3;
 const getQuestion = (question) => car(question);
 const getAnswer = (question) => cdr(question);
 
-const buildGame = (rules, genQuestion) => {
+const buildGame = (description, genQuestion) => {
   console.log('Welcome to the Brain Games!');
-  console.log(rules, '\n');
+  console.log(description, '\n');
 
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}\n`);
