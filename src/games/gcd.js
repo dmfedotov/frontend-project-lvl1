@@ -10,14 +10,14 @@ const calculateAnswer = (num, num2) => {
   const maxNum = Math.max(num, num2);
   const minNum = Math.min(num, num2);
 
-  const greatestCommonDivisor = (max, min) => {
+  const getGreatestCommonDivisor = (max, min) => {
     if (max % min === 0) {
       return min;
     }
-    return greatestCommonDivisor(min, max % min);
+    return getGreatestCommonDivisor(min, max % min);
   };
 
-  return String(greatestCommonDivisor(maxNum, minNum));
+  return String(getGreatestCommonDivisor(maxNum, minNum));
 };
 
 const generateQuestion = () => {
