@@ -21,11 +21,13 @@ const buildGame = (description, genQuestion) => {
     if (userAnswer === getAnswer(question)) {
       console.log('Correct!');
     } else {
-      return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${getAnswer(question)}'.\nLet's try again, ${userName}!`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${getAnswer(question)}'.\nLet's try again, ${userName}!`);
+      return false;
     }
   }
 
   console.log(`Congratulations, ${userName}!`);
+  return true;
 };
 
 export default buildGame;
