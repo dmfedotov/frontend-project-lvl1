@@ -8,7 +8,7 @@ const getAnswer = (question) => cdr(question);
 
 const buildGame = (rules, genQuestion) => {
   console.log('Welcome to the Brain Games!');
-  console.log(rules);
+  console.log(rules, '\n');
 
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}\n`);

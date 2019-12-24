@@ -2,7 +2,7 @@ import { cons } from '@hexlet/pairs';
 import buildGame from '..';
 import getRandomNum from '../util';
 
-const rules = 'What is the result of the expression?\n';
+const rules = 'What is the result of the expression?';
 const operations = ['+', '-', '*'];
 const minNumber = 1;
 const maxNumber = 20;

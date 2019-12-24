@@ -2,7 +2,7 @@ import { cons } from '@hexlet/pairs';
 import buildGame from '..';
 import getRandomNum from '../util';
 
-const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".\n';
+const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const minNumber = 1;
 const maxNumber = 500;
 
