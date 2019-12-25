@@ -20,7 +20,7 @@ const calculateAnswer = (num, num2) => {
   return getGreatestCommonDivisor(maxNum, minNum);
 };
 
-const generateQuestion = () => {
+const makeQuestionAnswer = () => {
   const number = getRandomNum(minNumber, maxNumber);
   const number2 = getRandomNum(minNumber, maxNumber);
   const question = `${number} ${number2}`;
@@ -29,6 +29,6 @@ const generateQuestion = () => {
   return cons(question, answer);
 };
 
-const startGame = () => buildGame(description, generateQuestion);
+const startGame = () => buildGame(description, makeQuestionAnswer);
 
 export default startGame;
