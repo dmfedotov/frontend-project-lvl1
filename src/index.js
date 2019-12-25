@@ -6,7 +6,7 @@ const roundsAmount = 3;
 const getQuestion = (question) => car(question);
 const getAnswer = (question) => cdr(question);
 
-const buildGame = (description, genQuestion) => {
+const buildGame = (description, makeQuestionAnswer) => {
   console.log('Welcome to the Brain Games!');
   console.log(description, '\n');
 
@@ -14,14 +14,14 @@ const buildGame = (description, genQuestion) => {
   console.log(`Hello, ${userName}\n`);
 
   for (let i = 1; i <= roundsAmount; i += 1) {
-    const question = genQuestion();
-    console.log(`Question: ${getQuestion(question)}`);
+    const questionAnswer = makeQuestionAnswer();
+    console.log(`Question: ${getQuestion(questionAnswer)}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if (userAnswer === getAnswer(question)) {
+    if (userAnswer === getAnswer(questionAnswer)) {
       console.log('Correct!');
     } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${getAnswer(question)}'.\nLet's try again, ${userName}!`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${getAnswer(questionAnswer)}'.\nLet's try again, ${userName}!`);
       return false;
     }
   }
