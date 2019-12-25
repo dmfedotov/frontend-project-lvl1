@@ -29,7 +29,7 @@ const calculateAnswer = (num, num2, operation) => {
   return answer;
 };
 
-const getQuestionAnswer = () => {
+const makeQuestionAnswer = () => {
   const number = getRandomNum(minNumber, maxNumber);
   const number2 = getRandomNum(minNumber, maxNumber);
   const operation = getRandomOperation(operations);
@@ -39,12 +39,6 @@ const getQuestionAnswer = () => {
   return cons(question, answer);
 };
 
-const saveQuestionAnswer = () => {
-  const questionAnswer = getQuestionAnswer();
-
-  return questionAnswer;
-};
-
-const startGame = () => buildGame(description, saveQuestionAnswer);
+const startGame = () => buildGame(description, makeQuestionAnswer);
 
 export default startGame;
