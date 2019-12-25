@@ -7,13 +7,13 @@ const minNumber = 1;
 const maxNumber = 100;
 
 const isEven = (num) => num % 2 === 0;
-const generateQuestion = () => {
+const makeQuestionAnswer = () => {
   const question = getRandomNum(minNumber, maxNumber);
   const answer = isEven(question) ? 'yes' : 'no';
 
   return cons(question, answer);
 };
 
-const startGame = () => buildGame(description, generateQuestion);
+const startGame = () => buildGame(description, makeQuestionAnswer);
 
 export default startGame;
