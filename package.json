@@ -1,6 +1,6 @@
 {
   "name": "frontend-project-lvl1",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "It's an interesting way to pass your time :)",
   "main": "dist/index.js",
   "bin": {
