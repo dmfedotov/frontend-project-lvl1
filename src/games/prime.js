@@ -20,13 +20,13 @@ const isPrime = (num) => {
   return true;
 };
 
-const generateQuestion = () => {
+const makeQuestionAnswer = () => {
   const question = getRandomNum(minNumber, maxNumber);
   const answer = isPrime(question) ? 'yes' : 'no';
 
   return cons(question, answer);
 };
 
-const startGame = () => buildGame(description, generateQuestion);
+const startGame = () => buildGame(description, makeQuestionAnswer);
 
 export default startGame;
