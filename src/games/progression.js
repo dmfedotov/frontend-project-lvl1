@@ -3,20 +3,19 @@ import buildGame from '..';
 import getRandomNum from '../util';
 
 const description = 'What number is missing in the progression?';
-const progressionLength = 11;
+const progressionLength = 10;
 const minNumber = 1;
-const maxNumber = 10;
 
 const generateQuestion = () => {
-  const missingPosition = getRandomNum(minNumber, maxNumber);
-  const progressionStep = getRandomNum(minNumber, maxNumber);
-  const initNumber = getRandomNum(minNumber, maxNumber);
+  const missingPosition = getRandomNum(minNumber, progressionLength);
+  const progressionStep = getRandomNum(minNumber, progressionLength);
+  const initNumber = getRandomNum(minNumber, progressionLength);
 
   const progression = '';
   let answer;
 
   const makeProgression = (counter, acc) => {
-    if (counter === progressionLength) {
+    if (counter > progressionLength) {
       return acc.trim();
     }
     if (counter === missingPosition) {
