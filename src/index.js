@@ -18,7 +18,7 @@ const buildGame = (description, makeQuestionAnswer) => {
     console.log(`Question: ${getQuestion(questionAnswer)}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if (userAnswer === getAnswer(questionAnswer)) {
+    if (userAnswer === String(getAnswer(questionAnswer))) {
       console.log('Correct!');
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${getAnswer(questionAnswer)}'.\nLet's try again, ${userName}!`);
