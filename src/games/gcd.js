@@ -17,7 +17,7 @@ const calculateAnswer = (num, num2) => {
     return getGreatestCommonDivisor(min, max % min);
   };
 
-  return String(getGreatestCommonDivisor(maxNum, minNum));
+  return getGreatestCommonDivisor(maxNum, minNum);
 };
 
 const generateQuestion = () => {
