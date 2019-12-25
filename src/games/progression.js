@@ -17,7 +17,7 @@ const getQuestionAnswer = () => {
       return acc.trim();
     }
     if (counter === missingPosition) {
-      answer = String(initNumber + progressionStep * (counter - 1));
+      answer = initNumber + progressionStep * (counter - 1);
       return generateQuestion(counter + 1, `${acc} ..`);
     }
     return generateQuestion(counter + 1, `${acc} ${initNumber + progressionStep * (counter - 1)}`);
