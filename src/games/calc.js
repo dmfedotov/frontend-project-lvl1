@@ -34,7 +34,7 @@ const makeQuestionAnswer = () => {
   const number2 = getRandomNum(minNumber, maxNumber);
   const operation = getRandomOperation(operations);
   const question = `${number} ${operation} ${number2}`;
-  const answer = calculateAnswer(number, number2, operation);
+  const answer = String(calculateAnswer(number, number2, operation));
 
   return cons(question, answer);
 };
