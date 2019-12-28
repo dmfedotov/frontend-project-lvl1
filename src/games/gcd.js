@@ -24,7 +24,7 @@ const makeQuestionAnswer = () => {
   const number = getRandomNum(minNumber, maxNumber);
   const number2 = getRandomNum(minNumber, maxNumber);
   const question = `${number} ${number2}`;
-  const answer = calculateAnswer(number, number2);
+  const answer = String(calculateAnswer(number, number2));
 
   return cons(question, answer);
 };
