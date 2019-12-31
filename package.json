@@ -2,7 +2,7 @@
   "name": "frontend-project-lvl1",
   "version": "1.4.4",
   "description": "It's an interesting way to pass your time :)",
-  "main": "dist/index.js",
+  "main": "",
   "bin": {
     "brain-even": "dist/bin/even.js",
     "brain-calc": "dist/bin/calc.js",
