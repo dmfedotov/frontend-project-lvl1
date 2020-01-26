@@ -6,7 +6,7 @@
 
 First, you need to install npm. After that run the following command in your terminal.   
 `npm install -g brain-games-by-jf`
-[![asciicast](asciinemas/install.gif)](https://asciinema.org/a/h5WtzhDEVtOSpVG0qy4Qiwt3h)
+[![asciicast](asciinemas/install-package.gif)](https://asciinema.org/a/h5WtzhDEVtOSpVG0qy4Qiwt3h)
 
 To start first game  
 run **brain-even**
