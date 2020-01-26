@@ -7,24 +7,24 @@
 First, you need to install npm. After that run the following commands in your terminal.  
 `make publish`  
 `npm link`
-[![asciicast](https://asciinema.org/a/WH49JRylYFcRWiGlmPuvhgabp.svg)](https://asciinema.org/a/WH49JRylYFcRWiGlmPuvhgabp)
+[![asciicast](asciinemas/install.gif)](https://asciinema.org/a/WH49JRylYFcRWiGlmPuvhgabp)
 
 Игра "Проверка на чётность"  
 run **brain-even**
-[![asciicast](https://asciinema.org/a/qW1AChHq9BIuVRyv51wj13wiy.svg)](https://asciinema.org/a/qW1AChHq9BIuVRyv51wj13wiy)
+[![asciicast](asciinemas/even.gif)](https://asciinema.org/a/qW1AChHq9BIuVRyv51wj13wiy)
 
 Игра "Калькулятор"  
 run **brain-calc**
-[![asciicast](https://asciinema.org/a/c8HNZ77mvHxjXwVYv1hqtvLhR.svg)](https://asciinema.org/a/c8HNZ77mvHxjXwVYv1hqtvLhR)
+[![asciicast](asciinemas/calc.gif)](https://asciinema.org/a/c8HNZ77mvHxjXwVYv1hqtvLhR)
 
 Игра "НОД"  
 run **brain-gcd**
-[![asciicast](https://asciinema.org/a/wvXDoWuQxLP9CHbRBIvQO5sU9.svg)](https://asciinema.org/a/wvXDoWuQxLP9CHbRBIvQO5sU9)
+[![asciicast](asciinemas/gcd.gif)](https://asciinema.org/a/wvXDoWuQxLP9CHbRBIvQO5sU9)
 
 Игра "Арифметическая прогрессия"  
 run **brain-progression**
-[![asciicast](https://asciinema.org/a/BblBY23Xrg6PmJJECbx3OzOu6.svg)](https://asciinema.org/a/BblBY23Xrg6PmJJECbx3OzOu6)
+[![asciicast](asciinemas/progression.gif)](https://asciinema.org/a/BblBY23Xrg6PmJJECbx3OzOu6)
 
 Игра "Простое ли число?"  
 run **brain-prime**
-[![asciicast](https://asciinema.org/a/8cHIidwwDAc6msBbspwyDJ2fz.svg)](https://asciinema.org/a/8cHIidwwDAc6msBbspwyDJ2fz)
+[![asciicast](asciinemas/prime.gif)](https://asciinema.org/a/8cHIidwwDAc6msBbspwyDJ2fz)
