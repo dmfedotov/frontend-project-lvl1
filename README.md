@@ -4,27 +4,26 @@
 
 [![Build Status](https://travis-ci.org/dmfedotov/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/dmfedotov/frontend-project-lvl1)
 
-First, you need to install npm. After that run the following commands in your terminal.  
-`make publish`  
-`npm link`
+First, you need to install npm. After that run the following command in your terminal.   
+`npm install -g brain-games-by-jf`
 [![asciicast](asciinemas/install.gif)](https://asciinema.org/a/WH49JRylYFcRWiGlmPuvhgabp)
 
-Игра "Проверка на чётность"  
+To start first game  
 run **brain-even**
 [![asciicast](asciinemas/even.gif)](https://asciinema.org/a/qW1AChHq9BIuVRyv51wj13wiy)
 
-Игра "Калькулятор"  
+To start second game  
 run **brain-calc**
 [![asciicast](asciinemas/calc.gif)](https://asciinema.org/a/c8HNZ77mvHxjXwVYv1hqtvLhR)
 
-Игра "НОД"  
+To start third game    
 run **brain-gcd**
 [![asciicast](asciinemas/gcd.gif)](https://asciinema.org/a/wvXDoWuQxLP9CHbRBIvQO5sU9)
 
-Игра "Арифметическая прогрессия"  
+To start fourth game   
 run **brain-progression**
 [![asciicast](asciinemas/progression.gif)](https://asciinema.org/a/BblBY23Xrg6PmJJECbx3OzOu6)
 
-Игра "Простое ли число?"  
+To start fifth game  
 run **brain-prime**
 [![asciicast](asciinemas/prime.gif)](https://asciinema.org/a/8cHIidwwDAc6msBbspwyDJ2fz)
